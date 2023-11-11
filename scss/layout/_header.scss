@@ -3,8 +3,22 @@
 
 .header{
     grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+
+    &__logo{
+        height: 4vh;
+    }
+
+}
+
+.navbar__menu{
+    display: flex;
+    gap: 2rem;
 }
 
 h1{
-    color: red;
+    color: red;    
 }

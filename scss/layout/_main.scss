@@ -3,4 +3,16 @@
 
 .main {
     grid-area: main;
+    .section {
+        width: 100%;
+        &--slider {
+            overflow: hidden;
+        }
+
+        &--products {
+            flex-direction: column;
+            gap: 1vw;
+        }
+
+    }
 }
