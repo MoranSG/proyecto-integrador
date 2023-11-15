@@ -15,6 +15,24 @@ a:link {
   text-decoration: none;
 }
 
+.banner {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.banner__image {
+  height: 20vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: 2rem -8rem;
+}
+.banner__title {
+  position: absolute;
+  color: rgba(221, 225, 223, 0.845);
+  font-size: 3rem;
+}
+
 .button {
   border: 0.0625rem solid black;
   border-radius: 0.35rem;
@@ -24,7 +42,7 @@ a:link {
 .button--sm {
   width: 6rem;
   padding: 0.125rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .button--md {
   width: 9rem;
@@ -78,7 +96,7 @@ a:link {
 }
 .card div {
   display: flex;
-  gap: 1vw;
+  gap: 0.5vw;
 }
 .card--product {
   display: flex;
@@ -86,7 +104,7 @@ a:link {
   border: 1px solid #ddd;
   border-radius: 8px;
   align-items: center;
-  gap: 3vh;
+  gap: 2vh;
 }
 .card__image {
   width: 100%;
@@ -99,7 +117,7 @@ a:link {
   font-size: 2.9rem;
 }
 .card__text {
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 .card__price {
   font-weight: bold;
@@ -117,61 +135,6 @@ a:link {
   text-align: center;
 }
 
-.slider {
-  position: relative;
-  height: 25vh;
-  width: 300%;
-  display: flex;
-  animation-name: move-slide;
-  animation-duration: 18s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-.slider__one, .slider__two, .slider__three {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.slider__title {
-  position: absolute;
-  font-size: 2rem;
-  color: white;
-}
-.slider__image {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-@keyframes move-slide {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-  75% {
-    left: -100%;
-  }
-  95% {
-    left: -100%;
-  }
-  100% {
-    left: 0;
-  }
-}
-
 body {
   display: grid;
   grid-template-areas: "header" "main" "footer";
@@ -183,6 +146,20 @@ body {
 
 .footer {
   grid-area: footer;
+  height: 10vh;
+  padding: 1vw;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(182, 182, 182);
+  border: 1px solid #fffdfd;
+}
+.footer__icons {
+  display: flex;
+  gap: 1vw;
+  border: none;
 }
 
 .header {
@@ -212,7 +189,7 @@ h1 {
 .main .section {
   width: 100%;
 }
-.main .section--slider {
+.main .section--banner {
   overflow: hidden;
   max-height: 100%;
   max-width: 80vw;

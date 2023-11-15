@@ -3,4 +3,19 @@
 
 .footer {
     grid-area: footer;
+    height: 10vh;
+    padding: 1vw;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var.$footerColor;
+    border: 1px solid #fffdfd;
+
+    &__icons {
+        display: flex;
+        gap: 1vw;
+        border: none;
+    }
 }
