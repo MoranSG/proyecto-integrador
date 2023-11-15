@@ -1,24 +1,25 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
 
-.header{
+.header {
     grid-area: header;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     font-size: 2rem;
-
-    &__logo{
-        height: 4vh;
+    justify-content: space-between;
+    &__logo {
+        height: 8vh;
     }
 
 }
 
 .navbar__menu{
     display: flex;
+    flex-direction: row;
     gap: 2rem;
 }
 
-h1{
-    color: red;    
+
+h1 {
+    color: red;
 }
