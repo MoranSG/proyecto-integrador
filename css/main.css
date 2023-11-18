@@ -144,6 +144,10 @@ body {
   background-color: rgb(51, 51, 51);
 }
 
+.about-us--body {
+  padding: 0.5vw;
+}
+
 .footer {
   grid-area: footer;
   height: 10vh;
@@ -157,11 +161,17 @@ body {
   border: 1px solid #fffdfd;
 }
 .footer__icons {
+  height: 1vh;
   display: flex;
   gap: 1vw;
   border: none;
 }
 
+@media screen and (max-width: 397px) {
+  .footer {
+    font-size: 1.2rem;
+  }
+}
 .header {
   grid-area: header;
   display: flex;
@@ -179,10 +189,26 @@ body {
   gap: 2rem;
 }
 
-h1 {
-  color: red;
+@media screen and (max-width: 1015px) {
+  .header__title {
+    font-size: 3rem;
+  }
 }
-
+@media screen and (max-width: 875px) {
+  .header {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 775px) {
+  .header {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  .header__title {
+    font-size: 2.5rem;
+  }
+}
 .main {
   grid-area: main;
 }
@@ -201,4 +227,117 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2vw;
+}
+
+.about-us--main {
+  height: 75vh;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f1f1;
+}
+.about-us--section {
+  background: url("/proyecto-integrador/images/gallery/background-about-us.jpg") no-repeat left;
+  background-size: 55%;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  padding: 100px 0;
+}
+.about-us--container {
+  width: 55%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 150px;
+}
+.about-us__title {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+.about-us__text {
+  font-size: 13px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+.about-us--skills {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-us--container {
+    padding: 70px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about-us--section {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
+  .about-us--container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-us--section {
+    padding: 0;
+  }
+  .about-us--container {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .about-us--section {
+    width: 100%;
+  }
+  .about-us--container {
+    width: 100%;
+  }
+}
+.--contact {
+  height: 75vh;
+  width: 100%;
+  padding: 3vh;
+}
+
+#contact {
+  background: url("/proyecto-integrador/images/gallery/background-contact-us.jpg") no-repeat center;
+  background-size: cover;
+  padding: 1rem 0;
+  height: 70vh;
+  text-align: center;
+  color: white;
+}
+#contact .underline {
+  width: 100px;
+  margin: 30px auto;
+  height: 5px;
+  background: rgba(18, 215, 34, 0.9);
+}
+#contact .contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+}
+#contact .contact-form .contact-form-text {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 20px 40px;
+  background: rgb(0, 0, 0);
+  outline: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+#contact .contact-form .contact-form-text:hover {
+  border: 1px solid rgba(18, 215, 34, 0.9);
+}
+#contact .contact-form textarea.contact-form-text {
+  height: 120px;
+  overflow: scroll;
 }/*# sourceMappingURL=main.css.map */

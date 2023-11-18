@@ -20,6 +20,26 @@
 }
 
 
-h1 {
-    color: red;
+@media screen and (max-width:1015px) {
+    .header__title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width:875px) {
+    .header{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:775px) {
+    .header {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .header__title {
+        font-size: 2.5rem;
+    }
 }

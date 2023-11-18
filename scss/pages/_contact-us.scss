@@ -1,0 +1,51 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.--contact {
+    height: 75vh;
+    width: 100%;
+    padding: 3vh;
+
+}
+
+#contact {
+    background: url("/proyecto-integrador/images/gallery/background-contact-us.jpg") no-repeat center;
+    background-size: cover;
+    padding: 1rem 0;
+    height: 70vh;
+    text-align: center;
+    color: white;
+
+    .underline {
+        width: 100px;
+        margin: 30px auto;
+        height: 5px;
+        background: var.$greenContact;
+    }
+
+    .contact-form {
+        max-width: 600px;
+        margin: auto;
+        padding: 0 10px;
+
+        .contact-form-text {
+            display: block;
+            width: 100%;
+            margin: 15px 0;
+            padding: 20px 40px;
+            background: var.$blackContact;
+            outline: none;
+            border: none;
+            color: var.$whiteContact;
+
+            &:hover {
+                border: 1px solid var.$greenContact;
+            }
+        }
+
+        textarea.contact-form-text {
+            height: 120px;
+            overflow: scroll;
+        }
+    }
+}

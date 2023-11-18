@@ -14,8 +14,15 @@
     border: 1px solid #fffdfd;
 
     &__icons {
+        height: 1vh;
         display: flex;
         gap: 1vw;
         border: none;
+    }
+}
+
+@media screen and (max-width:397px){
+    .footer{
+        font-size: 1.2rem;
     }
 }

@@ -15,3 +15,7 @@ body {
     width: calc(100% - (2*$_padding));
     background-color: var.$primaryBackgroundColor;
 }
+
+.about-us--body {
+    padding: $_padding;
+}

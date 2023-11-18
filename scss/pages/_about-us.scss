@@ -1,0 +1,88 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.about-us {
+    &--main {
+        height: 75vh;
+        min-height: 75vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f1f1f1;
+    }
+
+    &--section {
+        background: url("/proyecto-integrador/images/gallery/background-about-us.jpg") no-repeat left;
+        background-size: 55%;
+        background-color: #fdfdfd;
+        overflow: hidden;
+        padding: 100px 0;
+    }
+
+    &--container {
+        width: 55%;
+        float: right;
+        background-color: #fdfdfd;
+        padding: 150px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    &__text {
+        font-size: 13px;
+        color: #545454;
+        line-height: 30px;
+        text-align: justify;
+        margin-bottom: 40px;
+    }
+
+    &--skills {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about-us--container {
+        padding: 70px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about-us--section {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .about-us--container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-us--section {
+        padding: 0;
+    }
+
+    .about-us--container {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .about-us--section {
+        width: 100%;
+    }
+
+    .about-us--container {
+        width: 100%;
+    }
+
+}
