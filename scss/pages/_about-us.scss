@@ -3,8 +3,8 @@
 
 .about-us {
     &--main {
-        height: 75vh;
-        min-height: 75vh;
+        height: 73.5vh;
+        min-height: 73.5vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -17,6 +17,7 @@
         background-color: #fdfdfd;
         overflow: hidden;
         padding: 100px 0;
+        height: 65vh;
     }
 
     &--container {

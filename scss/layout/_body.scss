@@ -1,7 +1,7 @@
 @use "../abstracts/variables" as var;
 @use "../abstracts/mixins" as mix;
 
-$_padding: 0.5vw;
+$_padding: 2vw;
 
 body {
     display: grid;
@@ -11,11 +11,15 @@ body {
         "footer";
     gap: 1vw;
 
-    padding: $_padding;
-    width: calc(100% - (2*$_padding));
+    padding-top: $_padding;
+    padding-left: $_padding;
+    padding-right: $_padding;
+    width: 100%;
     background-color: var.$primaryBackgroundColor;
 }
 
 .about-us--body {
-    padding: $_padding;
+    padding-top: $_padding;
+    padding-left: $_padding;
+    padding-right: $_padding;
 }

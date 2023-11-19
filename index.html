@@ -21,13 +21,7 @@
         <img class="header__logo" src="./images/icons/Modo-toro-logo-black.png" alt="Logo">
         <h1 class="header__title">Mi tienda - Inicio</h1>
 
-        <div class="menu-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-
-        <nav class="navbar">
+        <nav class="navbar" id="navbarHamburger">
             <ul class="navbar__menu">
                 <li><a class="navbar__item navbar__item--active" href="./index.html">Home</a></li>
                 <li><a class="navbar__item" href="./pages/about-us.html">Nosotros</a></li>
@@ -47,7 +41,7 @@
             <h3>Galería de Productos</h3>
             <div> formulario de búsqueda y link para crear un nuevo producto</div>
             <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/img04.jpg" alt="breve descrip de la foto">
+                <div class="card--image-container"><img class="card__image" src="./images/gallery/img04.jpg" alt="breve descrip de la foto"></div>
                 <h4 class="card__title">Barra olimpica 2.2m</h4>
                 <p class="card__text">Barra de hierro 22kg.
                 </p>
@@ -60,7 +54,9 @@
             </figure>
 
             <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/img05.jpg" alt="breve descrip de la foto">
+                <div class="card--image-container">
+                    <img class="card__image" src="./images/gallery/img05.jpg" alt="breve descrip de la foto">
+                </div>
                 <h4 class="card__title">rack para barra olimpica</h4>
                 <p class="card__text">Estante para barra olimpica.
                 </p>
@@ -73,7 +69,7 @@
             </figure>
 
             <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/img06.jpg" alt="breve descrip de la foto">
+                <div class="card--image-container"><img class="card__image" src="./images/gallery/img06.jpg" alt="breve descrip de la foto"></div>
                 <h4 class="card__title">Suplemento diario de proteinas</h4>
                 <p class="card__text">Suplemento 25gr proteina.
                 </p>
@@ -86,7 +82,7 @@
             </figure>
 
             <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/img07.jpg" alt="breve descrip de la foto">
+                <div class="card--image-container"><img class="card__image" src="./images/gallery/img07.jpg" alt="breve descrip de la foto"></div>
                 <h4 class="card__title">Shaker de proteinas</h4>
                 <p class="card__text">Batidor de plastico 250ml.
                 </p>
@@ -99,7 +95,7 @@
             </figure>
 
             <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/img08.jpg" alt="breve descrip de la foto">
+                <div class="card--image-container"><img class="card__image" src="./images/gallery/img08.jpg" alt="breve descrip de la foto"></div>
                 <h4 class="card__title">Máquina de remo</h4>
                 <p class="card__text">Máquina de remo sentado con regulador de peso.
                 </p>
@@ -112,7 +108,7 @@
             </figure>
 
             <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/img09.jpg" alt="imagen de una pelota de yoga">
+                <div class="card--image-container"><img class="card__image" src="./images/gallery/img09.jpg" alt="imagen de una pelota de yoga"></div>
                 <h4 class="card__title">Pelota de yoga</h4>
                 <p class="card__text">Pelota de yoga de goma de 1kg.
                 </p>
@@ -125,7 +121,8 @@
             </figure>
 
             <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/img10.jpg" alt="imagen de mancuernas de plastico">
+                <div class="card--image-container"><img class="card__image" src="./images/gallery/img10.jpg" alt="imagen de mancuernas de plastico">
+                </div>
                 <h4 class="card__title">Mancuernas de plastico duro</h4>
                 <p class="card__text">Mancuernas rellenables de plastico.
                 </p>
@@ -138,7 +135,8 @@
             </figure>
 
             <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/img11.jpg" alt="imagen de una pesa rusa de acero">
+                <div class="card--image-container"><img class="card__image" src="./images/gallery/img11.jpg" alt="imagen de una pesa rusa de acero">
+                </div>
                 <h4 class="card__title">Pesa rusa de acero inoxidable masizo</h4>
                 <p class="card__text">Pesa de hierro 20kg.
                 </p>
@@ -151,7 +149,8 @@
             </figure>
 
             <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/img12.jpg" alt="imagen de una alfombra para yoga">
+                <div class="card--image-container"><img class="card__image" src="./images/gallery/img12.jpg" alt="imagen de una alfombra para yoga">
+                </div>
                 <h4 class="card__title">Yoga mat</h4>
                 <p class="card__text">Colchoneta de goma antideslizante.
                 </p>
@@ -164,8 +163,8 @@
             </figure>
 
             <figure class="card card--product">
-                <img class="card__image" src="./images/gallery/img13.jpg"
-                    alt="imagen de unas pesas, una soga y una botella de agua">
+                <div class="card--image-container"><img class="card__image" src="./images/gallery/img13.jpg"
+                        alt="imagen de unas pesas, una soga y una botella de agua"></div>
                 <h4 class="card__title">Kit principiante</h4>
                 <p class="card__text">set de mancuernas con soga y botella de agua.
                 </p>

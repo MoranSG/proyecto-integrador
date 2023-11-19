@@ -2,17 +2,15 @@
 @use "../abstracts/mixins" as mix;
 
 .--contact {
-    height: 75vh;
-    width: 100%;
-    padding: 3vh;
-
+    height: 73.5vh;
+    width: 100%; 
 }
 
 #contact {
     background: url("/proyecto-integrador/images/gallery/background-contact-us.jpg") no-repeat center;
     background-size: cover;
     padding: 1rem 0;
-    height: 70vh;
+    height: 73.5vh;
     text-align: center;
     color: white;
 
