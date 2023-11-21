@@ -33,6 +33,21 @@ a:link {
   font-size: 3rem;
 }
 
+@media screen and (max-width: 800px) {
+  .banner__title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .banner__title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .banner__title {
+    font-size: 1.5rem;
+  }
+}
 .button {
   border: 0.0625rem solid black;
   border-radius: 0.35rem;
@@ -89,6 +104,20 @@ a:link {
   color: white;
 }
 
+@media screen and (max-width: 815px) {
+  .button--sm {
+    width: 4.2rem;
+  }
+}
+@media screen and (max-width: 680px) {
+  .button--sm {
+    width: 4rem;
+    height: 3rem;
+  }
+  .card__counter {
+    height: 3rem;
+  }
+}
 .card {
   padding: 1.7vw;
   background-color: rgb(102, 102, 102);
@@ -118,6 +147,7 @@ a:link {
   align-items: center;
   width: 100%;
   height: 100%;
+  min-height: 20vh;
   max-height: 70%;
   overflow: hidden;
   background-color: white;
@@ -125,7 +155,7 @@ a:link {
 }
 .card__title {
   color: green;
-  font-size: 2.9rem;
+  font-size: 1.5rem;
   text-align: center;
   margin-top: 0;
 }
@@ -152,6 +182,11 @@ a:link {
   .card {
     width: 100%;
     max-width: none;
+  }
+}
+@media screen and (max-width: 1612) {
+  .card__image {
+    min-height: 15vh;
   }
 }
 body {
@@ -190,6 +225,12 @@ body {
   border: none;
 }
 
+@media screen and (max-width: 600px) {
+  .footer {
+    font-size: 1.3rem;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 397px) {
   .footer {
     font-size: 1.2rem;
@@ -206,17 +247,12 @@ body {
   height: 8vh;
 }
 
-.navbar__menu {
+.navbar--menu {
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
 
-@media screen and (max-width: 1015px) {
-  .header__title {
-    font-size: 3rem;
-  }
-}
 @media screen and (max-width: 875px) {
   .header {
     font-size: 1.5rem;
@@ -229,7 +265,39 @@ body {
 }
 @media screen and (max-width: 660px) {
   .header__title {
-    font-size: 2.5rem;
+    font-size: 3rem;
+  }
+  .menu-burger {
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  .menu {
+    list-style: none;
+    padding: 0;
+    display: none;
+  }
+  .menu li {
+    margin: 10px 0;
+    font-size: 1.4rem;
+  }
+  .menu a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+  }
+  .content {
+    padding: 20px;
   }
 }
 .main {
@@ -237,6 +305,47 @@ body {
 }
 .main .section {
   width: 100%;
+}
+.main .section--title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  height: 15vh;
+}
+.main .section__title {
+  text-align: center;
+}
+.main .section--search-container {
+  display: flex;
+  align-items: center;
+  height: 15vh;
+}
+.main .section--search-bar {
+  position: relative;
+}
+.main .section__search-input {
+  padding: 1.3rem;
+  padding-right: 1rem;
+  border-radius: 5px 0 0 5px;
+  border: 0;
+  outline: none;
+  font-size: 1.4rem;
+}
+.main .section__search-btn {
+  background-color: crimson;
+  padding: 1rem;
+  position: absolute;
+  border: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 0 5px 5px 0;
+  color: #fff;
+  cursor: pointer;
+}
+.main .section__search-btn:hover {
+  background-color: darkred;
 }
 .main .section--banner {
   overflow: hidden;
@@ -252,6 +361,11 @@ body {
   gap: 2vw;
 }
 
+@media screen and (max-width: 1200px) {
+  .section__title {
+    font-size: 2.8rem;
+  }
+}
 .about-us--main {
   height: 73.5vh;
   min-height: 73.5vh;
@@ -335,6 +449,14 @@ body {
   height: 73.5vh;
   text-align: center;
   color: white;
+}
+#contact .contact--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-right: 7vw;
 }
 #contact .underline {
   width: 100px;

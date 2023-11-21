@@ -19,13 +19,19 @@
 <body class="home">
     <header class="header">
         <img class="header__logo" src="./images/icons/Modo-toro-logo-black.png" alt="Logo">
-        <h1 class="header__title">Mi tienda - Inicio</h1>
+        <h1 class="header__title">Modo Toro</h1>
 
-        <nav class="navbar" id="navbarHamburger">
-            <ul class="navbar__menu">
-                <li><a class="navbar__item navbar__item--active" href="./index.html">Home</a></li>
-                <li><a class="navbar__item" href="./pages/about-us.html">Nosotros</a></li>
-                <li><a class="navbar__item" href="./pages/contact-us.html">Contacto</a></li>
+        <div class="header--burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav class="header--navbar">
+            <ul class="navbar--menu menu">
+                <li><a class="navbaritem" href="./index.html">Home</a></li>
+                <li><a class="navbaritem" href="./pages/about-us.html">Nosotros</a></li>
+                <li><a class="navbaritem" href="./pages/contact-us.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -38,14 +44,22 @@
             </div>
         </section>
         <section class="section section--products">
-            <h3>Galería de Productos</h3>
-            <div> formulario de búsqueda y link para crear un nuevo producto</div>
+            <div class="section--title">
+                <h3 class="section__title">Galería de Productos</h3>
+            </div>
+            <div class="section--search-container">
+                <div class="section--search-bar">
+                    <input class="section__search-input" type="text" placeholder="buscar...">
+                    <button class="section__search-btn"><span class="material-symbols-outlined">search</span></button>
+                </div>
+            </div>
             <figure class="card card--product">
-                <div class="card--image-container"><img class="card__image" src="./images/gallery/img04.jpg" alt="breve descrip de la foto"></div>
+                <div class="card--image-container"><img class="card__image" src="./images/gallery/img04.jpg"
+                        alt="breve descrip de la foto"></div>
                 <h4 class="card__title">Barra olimpica 2.2m</h4>
                 <p class="card__text">Barra de hierro 22kg.
                 </p>
-                <div>
+                <div class="card--info">
                     <span class="card__price">5500,22</span>
                     <button class="button button--sm button--add">Agregar</button>
                     <button class="button button--sm button--remove">Quitar</button>
@@ -60,7 +74,7 @@
                 <h4 class="card__title">rack para barra olimpica</h4>
                 <p class="card__text">Estante para barra olimpica.
                 </p>
-                <div>
+                <div class="card--info">
                     <span class="card__price">7500,72</span>
                     <button class="button button--sm button--add">Agregar</button>
                     <button class="button button--sm button--remove">Quitar</button>
@@ -69,11 +83,12 @@
             </figure>
 
             <figure class="card card--product">
-                <div class="card--image-container"><img class="card__image" src="./images/gallery/img06.jpg" alt="breve descrip de la foto"></div>
+                <div class="card--image-container"><img class="card__image" src="./images/gallery/img06.jpg"
+                        alt="breve descrip de la foto"></div>
                 <h4 class="card__title">Suplemento diario de proteinas</h4>
                 <p class="card__text">Suplemento 25gr proteina.
                 </p>
-                <div>
+                <div class="card--info">
                     <span class="card__price">5500,22</span>
                     <button class="button button--sm button--add">Agregar</button>
                     <button class="button button--sm button--remove">Quitar</button>
@@ -82,11 +97,12 @@
             </figure>
 
             <figure class="card card--product">
-                <div class="card--image-container"><img class="card__image" src="./images/gallery/img07.jpg" alt="breve descrip de la foto"></div>
+                <div class="card--image-container"><img class="card__image" src="./images/gallery/img07.jpg"
+                        alt="breve descrip de la foto"></div>
                 <h4 class="card__title">Shaker de proteinas</h4>
                 <p class="card__text">Batidor de plastico 250ml.
                 </p>
-                <div>
+                <div class="card--info">
                     <span class="card__price">7500,72</span>
                     <button class="button button--sm button--add">Agregar</button>
                     <button class="button button--sm button--remove">Quitar</button>
@@ -95,11 +111,12 @@
             </figure>
 
             <figure class="card card--product">
-                <div class="card--image-container"><img class="card__image" src="./images/gallery/img08.jpg" alt="breve descrip de la foto"></div>
+                <div class="card--image-container"><img class="card__image" src="./images/gallery/img08.jpg"
+                        alt="breve descrip de la foto"></div>
                 <h4 class="card__title">Máquina de remo</h4>
                 <p class="card__text">Máquina de remo sentado con regulador de peso.
                 </p>
-                <div>
+                <div class="card--info">
                     <span class="card__price">5500,22</span>
                     <button class="button button--sm button--add">Agregar</button>
                     <button class="button button--sm button--remove">Quitar</button>
@@ -108,11 +125,12 @@
             </figure>
 
             <figure class="card card--product">
-                <div class="card--image-container"><img class="card__image" src="./images/gallery/img09.jpg" alt="imagen de una pelota de yoga"></div>
+                <div class="card--image-container"><img class="card__image" src="./images/gallery/img09.jpg"
+                        alt="imagen de una pelota de yoga"></div>
                 <h4 class="card__title">Pelota de yoga</h4>
                 <p class="card__text">Pelota de yoga de goma de 1kg.
                 </p>
-                <div>
+                <div class="card--info">
                     <span class="card__price">7500,72</span>
                     <button class="button button--sm button--add">Agregar</button>
                     <button class="button button--sm button--remove">Quitar</button>
@@ -121,12 +139,13 @@
             </figure>
 
             <figure class="card card--product">
-                <div class="card--image-container"><img class="card__image" src="./images/gallery/img10.jpg" alt="imagen de mancuernas de plastico">
+                <div class="card--image-container"><img class="card__image" src="./images/gallery/img10.jpg"
+                        alt="imagen de mancuernas de plastico">
                 </div>
                 <h4 class="card__title">Mancuernas de plastico duro</h4>
                 <p class="card__text">Mancuernas rellenables de plastico.
                 </p>
-                <div>
+                <div class="card--info">
                     <span class="card__price">5500,22</span>
                     <button class="button button--sm button--add">Agregar</button>
                     <button class="button button--sm button--remove">Quitar</button>
@@ -135,12 +154,13 @@
             </figure>
 
             <figure class="card card--product">
-                <div class="card--image-container"><img class="card__image" src="./images/gallery/img11.jpg" alt="imagen de una pesa rusa de acero">
+                <div class="card--image-container"><img class="card__image" src="./images/gallery/img11.jpg"
+                        alt="imagen de una pesa rusa de acero">
                 </div>
                 <h4 class="card__title">Pesa rusa de acero inoxidable masizo</h4>
                 <p class="card__text">Pesa de hierro 20kg.
                 </p>
-                <div>
+                <div class="card--info">
                     <span class="card__price">7500,72</span>
                     <button class="button button--sm button--add">Agregar</button>
                     <button class="button button--sm button--remove">Quitar</button>
@@ -149,12 +169,13 @@
             </figure>
 
             <figure class="card card--product">
-                <div class="card--image-container"><img class="card__image" src="./images/gallery/img12.jpg" alt="imagen de una alfombra para yoga">
+                <div class="card--image-container"><img class="card__image" src="./images/gallery/img12.jpg"
+                        alt="imagen de una alfombra para yoga">
                 </div>
                 <h4 class="card__title">Yoga mat</h4>
                 <p class="card__text">Colchoneta de goma antideslizante.
                 </p>
-                <div>
+                <div class="card--info">
                     <span class="card__price">5500,22</span>
                     <button class="button button--sm button--add">Agregar</button>
                     <button class="button button--sm button--remove">Quitar</button>
@@ -168,7 +189,7 @@
                 <h4 class="card__title">Kit principiante</h4>
                 <p class="card__text">set de mancuernas con soga y botella de agua.
                 </p>
-                <div>
+                <div class="card--info">
                     <span class="card__price">7500,72</span>
                     <button class="button button--sm button--add">Agregar</button>
                     <button class="button button--sm button--remove">Quitar</button>

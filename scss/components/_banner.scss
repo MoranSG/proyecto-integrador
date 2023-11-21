@@ -23,3 +23,21 @@ $_width: 100%;
         font-size: 3rem;
     }
 }
+
+@media screen and (max-width:800px) {
+    .banner__title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .banner__title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .banner__title {
+        font-size: 1.5rem;
+    }
+}

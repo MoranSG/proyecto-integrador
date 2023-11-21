@@ -6,6 +6,7 @@
     border-radius: 0.35rem;
     box-shadow: 1px 1px 4px -3px gray;
     cursor: pointer;
+
     &--sm {
         width: 6rem;
         padding: 0.125rem;
@@ -52,4 +53,20 @@
         }
     }
 
+}
+
+@media screen and (max-width:815px) {
+    .button--sm {
+            width: 4.2rem;
+        }
+}
+
+@media screen and (max-width:680px) {
+    .button--sm {
+        width: 4rem;
+        height: 3rem;
+    }
+    .card__counter{
+        height: 3rem;
+    }
 }

@@ -13,18 +13,14 @@
 
 }
 
-.navbar__menu{
+.navbar--menu{
     display: flex;
     flex-direction: row;
     gap: 2rem;
 }
 
 
-@media screen and (max-width:1015px) {
-    .header__title {
-        font-size: 3rem;
-    }
-}
+
 
 @media screen and (max-width:875px) {
     .header{
@@ -40,6 +36,48 @@
 
 @media screen and (max-width:660px) {
     .header__title {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
+
+
+        .menu-burger {
+            cursor: pointer;
+            border: 1px solid white;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+    
+    
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px 0;
+            transition: 0.4s;
+        }
+    
+        .menu {
+            list-style: none;
+            padding: 0;
+            display: none;
+        }
+    
+        .menu li {
+            margin: 10px 0;
+            font-size: 1.4rem;
+        }
+    
+        .menu a {
+            text-decoration: none;
+            color: var.$whiteContact;
+            font-size: 1rem;
+        }
+    
+        .content {
+            padding: 20px;
+        }
+
+
 }
