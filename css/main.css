@@ -469,7 +469,10 @@ body {
   margin: auto;
   padding: 0 10px;
 }
-#contact .contact-form .contact-form-text {
+#contact .contact-form .contact-form-text,
+#contact .contact-form .contact-person-name,
+#contact .contact-form .contact-e-mail,
+#contact .contact-form .contact-phone-number {
   display: block;
   width: 100%;
   margin: 15px 0;
@@ -479,10 +482,49 @@ body {
   border: none;
   color: rgba(255, 255, 255, 0.9);
 }
-#contact .contact-form .contact-form-text:hover {
+#contact .contact-form .contact-form-text:hover,
+#contact .contact-form .contact-person-name:hover,
+#contact .contact-form .contact-e-mail:hover,
+#contact .contact-form .contact-phone-number:hover {
   border: 1px solid rgba(18, 215, 34, 0.9);
 }
 #contact .contact-form textarea.contact-form-text {
   height: 120px;
   overflow: scroll;
+}
+#contact .contact-form .contact__validate:focus:valid {
+  border: none;
+  outline: 2px solid rgb(5, 212, 5);
+}
+#contact .contact-form .contact__validate:focus:invalid {
+  border: none;
+  outline: 2px solid red;
+}
+
+.add-product-body {
+  height: 100vh;
+}
+
+.add-product {
+  height: 71.5vh;
+  margin: auto;
+  border: 5px solid black;
+  border-radius: 5px;
+  width: 40vw;
+}
+.add-product--form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+.add-product__validate:focus:valid {
+  border: none;
+  outline: 2px solid rgb(5, 212, 5);
+}
+.add-product__validate:focus:invalid {
+  border: none;
+  outline: 2px solid red;
 }/*# sourceMappingURL=main.css.map */

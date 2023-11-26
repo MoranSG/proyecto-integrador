@@ -1,0 +1,34 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+
+.add-product-body {
+    height: 100vh;
+}
+
+.add-product {
+    height: 71.5vh;
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 5px;
+    width: 40vw;
+
+    &--form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        gap: 0.2rem;
+    }
+
+    &__validate:focus:valid {
+        border: none;
+        outline: 2px solid rgb(5, 212, 5);
+    }
+
+    &__validate:focus:invalid {
+        border: none;
+        outline: 2px solid red;
+    }
+
+}

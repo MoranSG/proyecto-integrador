@@ -30,22 +30,28 @@
         </nav>
     </header>
 
-    <main class="home --contact">
-        <section id="contact">
-            <div class="contact--container">
+<main class="home --contact">
+    <section id="contact">
+        <div class="contact--container">
             <h1>Contáctanos</h1>
             <div class="underline"></div>
             <form class="contact-form" method="post">
-                <input type="text" class="contact-form-text" placeholder="Nombre/s">
-                <input type="email" class="contact-form-text" placeholder="E-mail">
-                <input type="text" class="contact-form-text" placeholder="Número de teléfono">
+                <input type="text" class="contact-person-name contact__validate" name="person-name" placeholder="Nombre/s"
+                    minlength="3" maxlength="30" required>
+                <span class="inputerror"></span>
+                <input type="email" class="contact-e-mail contact__validate" name="e-mail" placeholder="E-mail"
+                    minlength="10" maxlength="30" required>
+                <span class="inputerror"></span>
+                <input type="text" class="contact-phone-number contact__validate" name="phone-number"
+                    placeholder="Número de teléfono" min="8" max="11" required>
+                <span class="input__error"></span>
                 <textarea class="contact-form-text" placeholder="Tu mensaje"></textarea>
                 <input class="button button--sm button-submit" type="submit" value="Enviar"></input>
-                </div>
-            </form>
-        </section>
+        </div>
+        </form>
+    </section>
 
-    </main>
+</main>
 
     <footer class="footer">
         <span>&copy;2023 Todos los derechos reservados</span>

@@ -3,7 +3,7 @@
 
 .--contact {
     height: 73.5vh;
-    width: 100%; 
+    width: 100%;
 }
 
 #contact {
@@ -14,7 +14,7 @@
     text-align: center;
     color: white;
 
-    .contact--container{
+    .contact--container {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -35,7 +35,10 @@
         margin: auto;
         padding: 0 10px;
 
-        .contact-form-text {
+        .contact-form-text,
+        .contact-person-name,
+        .contact-e-mail,
+        .contact-phone-number {
             display: block;
             width: 100%;
             margin: 15px 0;
@@ -53,6 +56,16 @@
         textarea.contact-form-text {
             height: 120px;
             overflow: scroll;
+        }
+
+        .contact__validate:focus:valid {
+            border: none;
+            outline: 2px solid rgb(5, 212, 5);
+        }
+
+        .contact__validate:focus:invalid {
+            border: none;
+            outline: 2px solid red;
         }
     }
 }
