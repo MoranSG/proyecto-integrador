@@ -19,7 +19,18 @@
         align-content: center;
         justify-content: center;
         gap: 0.2rem;
+        font-size: 0.9rem;
     }
+
+    .add-product--form input[type=text],
+    input[type=number] {
+        width: 10vw;
+    }
+
+    .button--save {
+        font-size: 1.2rem;
+    }
+
 
     &__validate:focus:valid {
         border: none;
@@ -31,4 +42,22 @@
         outline: 2px solid red;
     }
 
+}
+
+@media screen and (max-width: 920px) {
+    .add-product {
+            width: 60vw;
+}
+}
+
+@media screen and (max-width: 518px) {
+.add-product--form input[type=file]{
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    textarea{
+        width: 50vw;
+    }
 }

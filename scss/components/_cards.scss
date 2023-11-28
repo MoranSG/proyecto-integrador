@@ -41,7 +41,7 @@
     }
 
     &__title {
-        color: green;
+        color: black;
         font-size: 1.5rem;
         text-align: center;
         margin-top: 0;
@@ -61,7 +61,7 @@
     }
 
     &__counter {
-        border: 1px solid black;
+        border: 1px solid #ddd;
         border-radius: 4px;
         background-color: white;
         padding: 1rem;
@@ -78,6 +78,12 @@
 
 @media screen and (max-width:1612) {
     .card__image{
+        min-height: 15vh;
+    }
+}
+
+@media screen and (max-width:746px) {
+    .card__image {
         min-height: 15vh;
     }
 }
